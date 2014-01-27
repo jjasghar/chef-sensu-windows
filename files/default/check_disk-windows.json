@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "check_disk-windows": {
+      "handlers": ["default"],
+      "command": "/opt/sensu/embedded/bin/ruby.exe /opt/sensu/plugins/check-disk-windows.rb",
+      "interval": 60,
+      "subscribers": [ "windows" ]
+    }
+  }
+}
